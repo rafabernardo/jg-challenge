@@ -20,7 +20,9 @@ import Button from '../../components/elements/Button';
 import userProfileImg from '../../assets/sarah_profile.png';
 import secondSectionImg from '../../assets/nanny_share_macbook.png';
 import thirdSectionImg from '../../assets/shared_payments.png';
-import fourthSectionImg from '../../assets/daily_diary.png';
+import fourthSectionImg from '../../assets/billing_history.png';
+import fithSectionImg from '../../assets/daily_diary.png';
+
 
 function Home() {
   return (
@@ -78,8 +80,10 @@ function Home() {
           <FormContent>
             <Input placeholder='Your name'></Input>
             <Input placeholder='Your email'></Input>
-            <Button> <span>Send</span> </Button>
-
+            <Button>
+              {' '}
+              <span>Send</span>{' '}
+            </Button>
           </FormContent>
         </Content>
       </Section>
@@ -92,8 +96,8 @@ function Home() {
             className='third-section-img'
           />
         </StyledImage>
-        <Content >
-          <Title> Shared payments made simple</Title>
+        <Content>
+          <Title>Shared payments made simple</Title>
           <Paragraph>
             Sometimes it’s hard enough just sharing a restaurant bill. Try
             sharing that bill week in, week out and you might encounter more
@@ -105,12 +109,36 @@ function Home() {
         </Content>
       </Section>
       <Divider size='25%' />
+      <Section padding='64px' gap='20px' textAlign='center'>
+        <Content large>
+          <Title>A framework built for the long term</Title>
+          <Paragraph>
+            Childcare is for the long term. And you need a framework you can
+            count on that gives your share long term viability and success.
+            That’s why we’ve defined Hapu around our three tribal principles;
+            clearly defined process, transparency over money and equality of
+            participation.
+          </Paragraph>
+        </Content>
+        <StyledImage>
+          <img
+            src={fourthSectionImg}
+            alt='Share payment'
+            className='fourth-section-img'
+          />
+        </StyledImage>
+      </Section>
+      <Divider size='25%' />
       <Section padding='64px' textAlign='center'>
         <StyledImage>
-          <img src={fourthSectionImg} alt='Share payment' className='fourth-section-img' />
+          <img
+            src={fithSectionImg}
+            alt='Share payment'
+            className='fith-section-img'
+          />
         </StyledImage>
         <Content large>
-          <TitleSmall>Coming soon: Nanny Share Daily Diary!</TitleSmall>
+          <Title>Coming soon: Nanny Share Daily Diary!</Title>
           <Paragraph>
             With the Hapu daily diary your nanny will be able to update you and
             your sharers with photos and commentary of the day. You and sharers

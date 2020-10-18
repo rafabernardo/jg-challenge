@@ -34,7 +34,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Content = styled.div`
-  width: ${({ large }) => (large ? '70vw' : '30vw')};
+  width: ${({ large }) => (large ? '45vw' : '30vw')};
 
   @media (max-width: 1023px) {
     width: 80vw;
@@ -77,6 +77,10 @@ export const StyledImage = styled.div`
   }
 
   .fourth-section-img {
+    width: 50vw;
+  }
+
+  .fith-section-img {
     width: 15vw;
   }
 
@@ -89,6 +93,10 @@ export const StyledImage = styled.div`
       width: 70vw;
     }
     .fourth-section-img {
+      width: 95vw;
+    }
+
+    .fith-section-img {
       width: 60vw;
     }
   }
