@@ -34,29 +34,25 @@ export const Paragraph = styled.p`
 `;
 
 export const Content = styled.div`
-  width: 30vw;
+  width: ${({ large }) => (large ? '70vw' : '30vw')};
+
   @media (max-width: 1023px) {
     width: 80vw;
   }
-`;
-
-export const ContentLarge = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
-  text-align: justify;
 `;
 
 export const FormContent = styled.div`
   display: flex;
   align-content: center;
   justify-content: space-around;
+  width: 30vw;
+  margin: 0 auto;
   input {
     margin: 0 10px;
   }
 
   @media (max-width: 1023px) {
+    width: 80vw;
     flex-direction: column;
     input {
       margin: 10px 10px;
@@ -76,9 +72,24 @@ export const StyledImage = styled.div`
     width: 30vw;
   }
 
-  @media (max-width: 1025px) {
+  .third-section-img {
+    width: 25vw;
+  }
+
+  .fourth-section-img {
+    width: 15vw;
+  }
+
+  @media (max-width: 768px) {
     .second-section-img {
-      width: 50vw;
+      width: 90vw;
+    }
+
+    .third-section-img {
+      width: 70vw;
+    }
+    .fourth-section-img {
+      width: 60vw;
     }
   }
 `;
