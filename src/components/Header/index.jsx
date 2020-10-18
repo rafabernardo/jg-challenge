@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <Container>
       <Menu>
-        <Button text={'Become a Nanny Share Host'} />
+        <Button> <span>Become a Nanny Share Host</span> </Button>
         <NavLink className='sign-in' to='/'>
           Sign in
         </NavLink>

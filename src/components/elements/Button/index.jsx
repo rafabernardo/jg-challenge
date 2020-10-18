@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const StyledButton = styled.button`
   border: none;
   border-radius: 4px;
-  background-color: #00c88c;
+  background-color:  ${({ color }) => (color ? color : ' #00c88c' )}; ;
   padding: 12px 22px;
   cursor: pointer;
   
@@ -20,8 +20,8 @@ export const StyledButton = styled.button`
 
 const Button = (props) => {
   return (
-    <StyledButton>
-      <span>{props.text}</span>
+    <StyledButton color={props.color}>
+      {props.children}
     </StyledButton>
   );
 };

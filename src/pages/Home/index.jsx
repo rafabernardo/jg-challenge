@@ -78,7 +78,8 @@ function Home() {
           <FormContent>
             <Input placeholder='Your name'></Input>
             <Input placeholder='Your email'></Input>
-            <Button text={'Send'} />
+            <Button> <span>Send</span> </Button>
+
           </FormContent>
         </Content>
       </Section>
